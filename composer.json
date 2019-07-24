@@ -1,0 +1,26 @@
+{
+  "name": "iconlanguageservices/time",
+  "type": "library",
+  "description": "A PHP library exposing convenient constants to represent numeric periods of time using English words",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Gareth Ellis",
+      "email": "gareth.ellis@iconplc.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Nils Luxton",
+      "email": "nils.luxton@iconplc.com",
+      "role": "Developer"
+    },
+    {
+      "name": "Filipe Bonito",
+      "email": "filipe.bonito@iconplc.com",
+      "role": "Developer"
+    }
+  ],
+  "require": {
+    "php": ">=7.1"
+  }
+}

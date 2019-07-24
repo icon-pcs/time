@@ -1,0 +1,4 @@
+vendor/
+.idea/
+time.iml
+.phpunit.result.cache
