@@ -22,5 +22,13 @@
   ],
   "require": {
     "php": ">=7.1"
+  },
+  "autoload": {
+    "psr-4": {
+      "IconLanguageServices\\Time\\": "src/"
+    },
+    "files": [
+      "src/functions.php"
+    ]
   }
 }
