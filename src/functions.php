@@ -12,6 +12,11 @@ function minutes(int $minutes): Minutes
     return new Minutes($minutes);
 }
 
+function days(int $days): Days
+{
+    return new Days($days);
+}
+
 function seconds(int $seconds): Seconds
 {
     return new Seconds($seconds);
