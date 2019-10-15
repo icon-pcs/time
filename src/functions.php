@@ -11,3 +11,8 @@ function minutes(int $minutes): Minutes
 {
     return new Minutes($minutes);
 }
+
+function seconds(int $seconds): Seconds
+{
+    return new Seconds($seconds);
+}

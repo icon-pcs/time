@@ -2,7 +2,7 @@
 
 namespace IconLanguageServices\Time;
 
-final class Hours implements ConvertsToSeconds
+final class Hours implements ConvertsToSeconds, ConvertsToMilliseconds
 {
     const ONE_DAY = 24;
     const ONE_WEEK = 168;
@@ -20,5 +20,10 @@ final class Hours implements ConvertsToSeconds
     public function inSeconds(): int
     {
         return $this->hours * Seconds::ONE_HOUR;
+    }
+
+    public function inMilliseconds(): float
+    {
+        return $this->inSeconds() * 1000;
     }
 }
