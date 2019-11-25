@@ -2,7 +2,7 @@
 
 namespace IconLanguageServices\Time;
 
-final class Minutes implements ConvertsToSeconds
+final class Minutes implements ConvertsToSeconds, ConvertsToMilliseconds
 {
     const ONE_HOUR = 60;
     const ONE_DAY = 1440;
@@ -22,5 +22,10 @@ final class Minutes implements ConvertsToSeconds
     public function inSeconds(): int
     {
         return $this->minutes * Seconds::ONE_MINUTE;
+    }
+
+    public function inMilliseconds(): float
+    {
+        return $this->inSeconds() * 1000;
     }
 }

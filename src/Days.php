@@ -2,7 +2,7 @@
 
 namespace IconLanguageServices\Time;
 
-final class Days implements ConvertsToSeconds
+final class Days implements ConvertsToSeconds, ConvertsToMilliseconds
 {
     const ONE_WEEK = 7;
     const ONE_NON_LEAP_YEAR = 365;
@@ -20,5 +20,10 @@ final class Days implements ConvertsToSeconds
     public function inSeconds(): int
     {
         return $this->days * Seconds::ONE_DAY;
+    }
+
+    public function inMilliseconds(): float
+    {
+        return $this->inSeconds() * 1000;
     }
 }
