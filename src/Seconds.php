@@ -25,7 +25,7 @@ final class Seconds implements ConvertsToSeconds, ConvertsToMilliseconds
         return $this->seconds;
     }
 
-    public function inMilliseconds(): float
+    public function inMilliseconds(): int
     {
         return $this->inSeconds() * 1000;
     }

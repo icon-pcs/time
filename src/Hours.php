@@ -22,7 +22,7 @@ final class Hours implements ConvertsToSeconds, ConvertsToMilliseconds
         return $this->hours * Seconds::ONE_HOUR;
     }
 
-    public function inMilliseconds(): float
+    public function inMilliseconds(): int
     {
         return $this->inSeconds() * 1000;
     }

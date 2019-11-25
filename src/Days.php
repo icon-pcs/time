@@ -22,7 +22,7 @@ final class Days implements ConvertsToSeconds, ConvertsToMilliseconds
         return $this->days * Seconds::ONE_DAY;
     }
 
-    public function inMilliseconds(): float
+    public function inMilliseconds(): int
     {
         return $this->inSeconds() * 1000;
     }

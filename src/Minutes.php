@@ -24,7 +24,7 @@ final class Minutes implements ConvertsToSeconds, ConvertsToMilliseconds
         return $this->minutes * Seconds::ONE_MINUTE;
     }
 
-    public function inMilliseconds(): float
+    public function inMilliseconds(): int
     {
         return $this->inSeconds() * 1000;
     }
